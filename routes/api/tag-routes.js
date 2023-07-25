@@ -24,7 +24,7 @@ router.get('/', (req, res) => {
       ],
     }]
   })
-  .then(AllTag => json(AllTag))
+  .then(AllTag => res.json(AllTag))
   .catch(err =>{
     console.log(err);
     res.status(500).json(err);
